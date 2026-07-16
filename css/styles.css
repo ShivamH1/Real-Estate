@@ -724,6 +724,35 @@ body.drawer-locked { overflow: hidden; }
 }
 .about-copy > p:not(.lead) { margin-top: 2rem; font-size: 1.55rem; }
 
+.about-creds {
+  list-style: none;
+  margin-top: 2.8rem;
+  display: grid;
+  gap: 1.4rem;
+}
+@media (min-width: 560px) { .about-creds { grid-template-columns: 1fr 1fr; } }
+.about-creds li {
+  padding: 1.8rem 2.2rem;
+  background: var(--gold-tint);
+  border: 1px solid var(--gold-soft);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.about-creds li span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
 .mv-grid { margin-top: 3.2rem; display: grid; gap: 2rem; }
 @media (min-width: 640px) { .mv-grid { grid-template-columns: 1fr 1fr; } }
 
